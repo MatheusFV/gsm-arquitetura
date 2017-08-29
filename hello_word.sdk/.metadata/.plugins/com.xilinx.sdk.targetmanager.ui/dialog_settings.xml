@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="hello_word_wrapper.mmi" key="hello_word_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="hello_word_wrapper_hw_platform_0-target"/>
+	<item value="false" key="hello_word_wrapper_hw_platform_0-partial_bit"/>
+	<item value="hello_word_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="bootloop" key="hello_word_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="Auto Detect" key="hello_word_wrapper_hw_platform_0-device"/>
+	<item value="hello_word_wrapper.bit" key="hello_word_wrapper_hw_platform_0-bitFile"/>
+</section>

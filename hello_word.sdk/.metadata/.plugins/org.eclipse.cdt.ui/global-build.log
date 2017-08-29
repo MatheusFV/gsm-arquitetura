@@ -1,0 +1,1547 @@
+20:00:21 **** Incremental Build of configuration Release for project hello_word ****
+make all 
+'Building file: ../src/add.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/add.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/add.d" -MT"src/add.o" -o "src/add.o" "../src/add.c"
+../src/add.c: In function 'gsm_mult':
+../src/add.c:38:14: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  else return SASR( (longword)a * (longword)b, 15 );
+              ^~~~
+'Finished building: ../src/add.c'
+' '
+'Building file: ../src/code.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/code.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/code.d" -MT"src/code.o" -o "src/code.o" "../src/code.c"
+../src/code.c: In function 'Gsm_Coder':
+../src/code.c:97:8: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  (void)memcpy( (char *)S->dp0, (char *)(S->dp0 + 160),
+        ^~~~~~
+../src/code.c:97:8: warning: incompatible implicit declaration of built-in function 'memcpy'
+../src/code.c:97:8: note: include '<string.h>' or provide a declaration of 'memcpy'
+'Finished building: ../src/code.c'
+' '
+'Building file: ../src/debug.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/debug.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/debug.d" -MT"src/debug.o" -o "src/debug.o" "../src/debug.c"
+../src/debug.c: In function 'gsm_debug_longwords':
+../src/debug.c:52:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'longword {aka long int}' [-Wformat=]
+   fprintf(stderr, "%d ", ptr[ from ] );
+                     ^
+../src/debug.c: In function 'gsm_debug_longword':
+../src/debug.c:66:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value );
+                        ^
+../src/debug.c: In function 'gsm_debug_word':
+../src/debug.c:73:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value);
+                        ^
+'Finished building: ../src/debug.c'
+' '
+'Building file: ../src/decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/decode.d" -MT"src/decode.o" -o "src/decode.o" "../src/decode.c"
+'Finished building: ../src/decode.c'
+' '
+'Building file: ../src/gsm_create.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_create.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_create.d" -MT"src/gsm_create.o" -o "src/gsm_create.o" "../src/gsm_create.c"
+../src/gsm_create.c:7:13: warning: 'ident' defined but not used [-Wunused-variable]
+ static char ident[] = "$Header: /home/mguthaus/.cvsroot/mibench/telecomm/gsm/src/gsm_create.c,v 1.1.1.1 2000/11/06 19:54:25 mguthaus Exp $";
+             ^~~~~
+'Finished building: ../src/gsm_create.c'
+' '
+'Building file: ../src/gsm_decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_decode.d" -MT"src/gsm_decode.o" -o "src/gsm_decode.o" "../src/gsm_decode.c"
+'Finished building: ../src/gsm_decode.c'
+' '
+'Building file: ../src/gsm_destroy.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_destroy.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_destroy.d" -MT"src/gsm_destroy.o" -o "src/gsm_destroy.o" "../src/gsm_destroy.c"
+'Finished building: ../src/gsm_destroy.c'
+' '
+'Building file: ../src/gsm_encode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_encode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_encode.d" -MT"src/gsm_encode.o" -o "src/gsm_encode.o" "../src/gsm_encode.c"
+'Finished building: ../src/gsm_encode.c'
+' '
+'Building file: ../src/gsm_explode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_explode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_explode.d" -MT"src/gsm_explode.o" -o "src/gsm_explode.o" "../src/gsm_explode.c"
+'Finished building: ../src/gsm_explode.c'
+' '
+'Building file: ../src/gsm_implode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_implode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_implode.d" -MT"src/gsm_implode.o" -o "src/gsm_implode.o" "../src/gsm_implode.c"
+'Finished building: ../src/gsm_implode.c'
+' '
+'Building file: ../src/gsm_option.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_option.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_option.d" -MT"src/gsm_option.o" -o "src/gsm_option.o" "../src/gsm_option.c"
+'Finished building: ../src/gsm_option.c'
+' '
+'Building file: ../src/gsm_print.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/gsm_print.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_print.d" -MT"src/gsm_print.o" -o "src/gsm_print.o" "../src/gsm_print.c"
+'Finished building: ../src/gsm_print.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/long_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/long_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/long_term.d" -MT"src/long_term.o" -o "src/long_term.o" "../src/long_term.c"
+../src/long_term.c: In function 'Calculation_of_the_LTP_parameters':
+../src/long_term.c:113:36: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  for (k = 0; k <= 39; k++) wt[k] = SASR( d[k], scal );
+                                    ^~~~
+'Finished building: ../src/long_term.c'
+' '
+'Building file: ../src/lpc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/lpc.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lpc.d" -MT"src/lpc.o" -o "src/lpc.o" "../src/lpc.c"
+'Finished building: ../src/lpc.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/preprocess.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/preprocess.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/preprocess.d" -MT"src/preprocess.o" -o "src/preprocess.o" "../src/preprocess.c"
+../src/preprocess.c: In function 'Gsm_Preprocess':
+../src/preprocess.c:61:8: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+   SO = SASR( *s, 3 ) << 2;
+        ^~~~
+'Finished building: ../src/preprocess.c'
+' '
+'Building file: ../src/rpe.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/rpe.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/rpe.d" -MT"src/rpe.o" -o "src/rpe.o" "../src/rpe.c"
+../src/rpe.c: In function 'Weighting_filter':
+../src/rpe.c:108:14: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+   L_result = SASR( L_result, 13 );
+              ^~~~
+'Finished building: ../src/rpe.c'
+' '
+'Building file: ../src/short_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/short_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/short_term.d" -MT"src/short_term.o" -o "src/short_term.o" "../src/short_term.c"
+'Finished building: ../src/short_term.c'
+' '
+'Building file: ../src/table.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/table.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/table.d" -MT"src/table.o" -o "src/table.o" "../src/table.c"
+'Finished building: ../src/table.c'
+' '
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building file: ../src/toast_alaw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/toast_alaw.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_alaw.d" -MT"src/toast_alaw.o" -o "src/toast_alaw.o" "../src/toast_alaw.c"
+'Finished building: ../src/toast_alaw.c'
+' '
+'Building file: ../src/toast_audio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/toast_audio.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_audio.d" -MT"src/toast_audio.o" -o "src/toast_audio.o" "../src/toast_audio.c"
+'Finished building: ../src/toast_audio.c'
+' '
+'Building file: ../src/toast_lin.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/toast_lin.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_lin.d" -MT"src/toast_lin.o" -o "src/toast_lin.o" "../src/toast_lin.c"
+'Finished building: ../src/toast_lin.c'
+' '
+'Building file: ../src/toast_ulaw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/toast_ulaw.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_ulaw.d" -MT"src/toast_ulaw.o" -o "src/toast_ulaw.o" "../src/toast_ulaw.c"
+'Finished building: ../src/toast_ulaw.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/add.o: In function `gsm_mult':
+(.text.gsm_mult+0xcc): undefined reference to `SASR'
+./src/decode.o: In function `Gsm_Decoder':
+(.text.Gsm_Decoder+0x1b0): undefined reference to `SASR'
+./src/long_term.o: In function `Gsm_Long_Term_Predictor':
+(.text.Gsm_Long_Term_Predictor+0x138): undefined reference to `SASR'
+./src/long_term.o: In function `Gsm_Long_Term_Predictor':
+(.text.Gsm_Long_Term_Predictor+0x97c): undefined reference to `SASR'
+./src/long_term.o: In function `Gsm_Long_Term_Predictor':
+(.text.Gsm_Long_Term_Predictor+0xa54): undefined reference to `SASR'
+./src/long_term.o:(.text.Gsm_Long_Term_Predictor+0xb70): more undefined references to `SASR' follow
+./src/toast.o: In function `process':
+(.text.process+0x5dc): undefined reference to `utime'
+./src/toast.o: In function `process':
+(.text.process+0x614): undefined reference to `fchmod'
+./src/toast.o: In function `process':
+(.text.process+0x694): undefined reference to `fchown'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+
+20:00:43 Build Finished (took 21s.999ms)
+
+20:00:43 **** Incremental Build of configuration Debug for project hello_word ****
+make all 
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/add.o: In function `gsm_mult':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/add.c:181: undefined reference to `SASR'
+./src/decode.o: In function `Postprocessing':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/decode.c:29: undefined reference to `SASR'
+./src/long_term.o: In function `Calculation_of_the_LTP_parameters':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:113: undefined reference to `SASR'
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:178: undefined reference to `SASR'
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:197: undefined reference to `SASR'
+./src/long_term.o:C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:198: more undefined references to `SASR' follow
+./src/toast.o: In function `update_mode':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+19:56:56 **** Build of project hello_word_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_3/src"
+make -C microblaze_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+19:59:36 **** Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+../src/toast.c:9:19: fatal error: toast.h: No such file or directory
+ #include "toast.h"
+                   ^
+compilation terminated.
+make: *** [src/toast.o] Error 1
+20:04:26 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.c:9:0:
+../src/toast.h:12:20: fatal error: config.h: No such file or directory
+ #include "config.h"
+                    ^
+compilation terminated.
+make: *** [src/toast.o] Error 1
+20:04:55 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/code.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/code.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/code.d" -MT"src/code.o" -o "src/code.o" "../src/code.c"
+In file included from ../src/code.c:9:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/code.c:19:21: fatal error: private.h: No such file or directory
+ #include "private.h"
+                     ^
+compilation terminated.
+make: *** [src/code.o] Error 1
+20:05:16 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/add.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/add.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/add.d" -MT"src/add.o" -o "src/add.o" "../src/add.c"
+../src/add.c: In function 'gsm_mult':
+../src/add.c:38:14: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  else return SASR( (longword)a * (longword)b, 15 );
+              ^~~~
+'Finished building: ../src/add.c'
+' '
+'Building file: ../src/code.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/code.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/code.d" -MT"src/code.o" -o "src/code.o" "../src/code.c"
+In file included from ../src/code.c:9:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/code.c: In function 'Gsm_Coder':
+../src/code.c:97:8: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  (void)memcpy( (char *)S->dp0, (char *)(S->dp0 + 160),
+        ^~~~~~
+../src/code.c:97:8: warning: incompatible implicit declaration of built-in function 'memcpy'
+../src/code.c:97:8: note: include '<string.h>' or provide a declaration of 'memcpy'
+'Finished building: ../src/code.c'
+' '
+'Building file: ../src/debug.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/debug.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/debug.d" -MT"src/debug.o" -o "src/debug.o" "../src/debug.c"
+../src/debug.c: In function 'gsm_debug_longwords':
+../src/debug.c:52:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'longword {aka long int}' [-Wformat=]
+   fprintf(stderr, "%d ", ptr[ from ] );
+                     ^
+../src/debug.c: In function 'gsm_debug_longword':
+../src/debug.c:66:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value );
+                        ^
+../src/debug.c: In function 'gsm_debug_word':
+../src/debug.c:73:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value);
+                        ^
+'Finished building: ../src/debug.c'
+' '
+'Building file: ../src/decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/decode.d" -MT"src/decode.o" -o "src/decode.o" "../src/decode.c"
+In file included from ../src/decode.c:11:0:
+../src/decode.c: In function 'Postprocessing':
+../src/private.h:88:3: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  (SASR( ((longword)(a) * (longword)(b) + 16384), 15 ))
+   ^
+../src/decode.c:29:9: note: in expansion of macro 'GSM_MULT_R'
+   tmp = GSM_MULT_R( msr, 28180 );
+         ^~~~~~~~~~
+'Finished building: ../src/decode.c'
+' '
+'Building file: ../src/gsm_create.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_create.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_create.d" -MT"src/gsm_create.o" -o "src/gsm_create.o" "../src/gsm_create.c"
+In file included from ../src/gsm_create.c:9:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/gsm_create.c:7:13: warning: 'ident' defined but not used [-Wunused-variable]
+ static char ident[] = "$Header: /home/mguthaus/.cvsroot/mibench/telecomm/gsm/src/gsm_create.c,v 1.1.1.1 2000/11/06 19:54:25 mguthaus Exp $";
+             ^~~~~
+'Finished building: ../src/gsm_create.c'
+' '
+'Building file: ../src/gsm_decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_decode.d" -MT"src/gsm_decode.o" -o "src/gsm_decode.o" "../src/gsm_decode.c"
+'Finished building: ../src/gsm_decode.c'
+' '
+'Building file: ../src/gsm_destroy.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_destroy.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_destroy.d" -MT"src/gsm_destroy.o" -o "src/gsm_destroy.o" "../src/gsm_destroy.c"
+In file included from ../src/gsm_destroy.c:10:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+'Finished building: ../src/gsm_destroy.c'
+' '
+'Building file: ../src/gsm_encode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_encode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_encode.d" -MT"src/gsm_encode.o" -o "src/gsm_encode.o" "../src/gsm_encode.c"
+'Finished building: ../src/gsm_encode.c'
+' '
+'Building file: ../src/gsm_explode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_explode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_explode.d" -MT"src/gsm_explode.o" -o "src/gsm_explode.o" "../src/gsm_explode.c"
+'Finished building: ../src/gsm_explode.c'
+' '
+'Building file: ../src/gsm_implode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_implode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_implode.d" -MT"src/gsm_implode.o" -o "src/gsm_implode.o" "../src/gsm_implode.c"
+'Finished building: ../src/gsm_implode.c'
+' '
+'Building file: ../src/gsm_option.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_option.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_option.d" -MT"src/gsm_option.o" -o "src/gsm_option.o" "../src/gsm_option.c"
+'Finished building: ../src/gsm_option.c'
+' '
+'Building file: ../src/gsm_print.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_print.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_print.d" -MT"src/gsm_print.o" -o "src/gsm_print.o" "../src/gsm_print.c"
+'Finished building: ../src/gsm_print.c'
+' '
+'Building file: ../src/long_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/long_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/long_term.d" -MT"src/long_term.o" -o "src/long_term.o" "../src/long_term.c"
+../src/long_term.c: In function 'Calculation_of_the_LTP_parameters':
+../src/long_term.c:113:36: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  for (k = 0; k <= 39; k++) wt[k] = SASR( d[k], scal );
+                                    ^~~~
+'Finished building: ../src/long_term.c'
+' '
+'Building file: ../src/lpc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lpc.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lpc.d" -MT"src/lpc.o" -o "src/lpc.o" "../src/lpc.c"
+In file included from ../src/lpc.c:12:0:
+../src/lpc.c: In function 'Autocorrelation':
+../src/private.h:88:3: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  (SASR( ((longword)(a) * (longword)(b) + 16384), 15 ))
+   ^
+../src/lpc.c:75:11: note: in expansion of macro 'GSM_MULT_R'
+    s[k] = GSM_MULT_R( s[k], 16384 >> (n-1) );\
+           ^~~~~~~~~~
+../src/lpc.c:80:3: note: in expansion of macro 'SCALE'
+   SCALE(1)
+   ^~~~~
+'Finished building: ../src/lpc.c'
+' '
+'Building file: ../src/preprocess.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/preprocess.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/preprocess.d" -MT"src/preprocess.o" -o "src/preprocess.o" "../src/preprocess.c"
+../src/preprocess.c: In function 'Gsm_Preprocess':
+../src/preprocess.c:61:8: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+   SO = SASR( *s, 3 ) << 2;
+        ^~~~
+'Finished building: ../src/preprocess.c'
+' '
+'Building file: ../src/rpe.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpe.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/rpe.d" -MT"src/rpe.o" -o "src/rpe.o" "../src/rpe.c"
+../src/rpe.c: In function 'Weighting_filter':
+../src/rpe.c:108:14: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+   L_result = SASR( L_result, 13 );
+              ^~~~
+'Finished building: ../src/rpe.c'
+' '
+'Building file: ../src/short_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/short_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/short_term.d" -MT"src/short_term.o" -o "src/short_term.o" "../src/short_term.c"
+In file included from ../src/short_term.c:12:0:
+../src/short_term.c: In function 'Decoding_of_the_coded_Log_Area_Ratios':
+../src/private.h:88:3: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  (SASR( ((longword)(a) * (longword)(b) + 16384), 15 ))
+   ^
+../src/short_term.c:57:14: note: in expansion of macro 'GSM_MULT_R'
+   temp1    = GSM_MULT_R( INVA, temp1 );  \
+              ^~~~~~~~~~
+../src/short_term.c:60:2: note: in expansion of macro 'STEP'
+  STEP(      0,  -32,  13107 );
+  ^~~~
+'Finished building: ../src/short_term.c'
+' '
+'Building file: ../src/table.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/table.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/table.d" -MT"src/table.o" -o "src/table.o" "../src/table.c"
+'Finished building: ../src/table.c'
+' '
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building file: ../src/toast_alaw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast_alaw.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_alaw.d" -MT"src/toast_alaw.o" -o "src/toast_alaw.o" "../src/toast_alaw.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast_alaw.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+'Finished building: ../src/toast_alaw.c'
+' '
+'Building file: ../src/toast_audio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast_audio.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_audio.d" -MT"src/toast_audio.o" -o "src/toast_audio.o" "../src/toast_audio.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast_audio.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+'Finished building: ../src/toast_audio.c'
+' '
+'Building file: ../src/toast_lin.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast_lin.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_lin.d" -MT"src/toast_lin.o" -o "src/toast_lin.o" "../src/toast_lin.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast_lin.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+'Finished building: ../src/toast_lin.c'
+' '
+'Building file: ../src/toast_ulaw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast_ulaw.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast_ulaw.d" -MT"src/toast_ulaw.o" -o "src/toast_ulaw.o" "../src/toast_ulaw.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast_ulaw.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+'Finished building: ../src/toast_ulaw.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/add.o: In function `gsm_mult':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/add.c:181: undefined reference to `SASR'
+./src/decode.o: In function `Postprocessing':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/decode.c:29: undefined reference to `SASR'
+./src/long_term.o: In function `Calculation_of_the_LTP_parameters':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:113: undefined reference to `SASR'
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:178: undefined reference to `SASR'
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:197: undefined reference to `SASR'
+./src/long_term.o:C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:198: more undefined references to `SASR' follow
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:21:28 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/add.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/add.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/add.d" -MT"src/add.o" -o "src/add.o" "../src/add.c"
+../src/add.c: In function 'gsm_mult':
+../src/add.c:44:14: warning: implicit declaration of function 'SASR' [-Wimplicit-function-declaration]
+  else return SASR( (longword)a * (longword)b, 15 );
+              ^~~~
+'Finished building: ../src/add.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/add.o: In function `gsm_mult':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/add.c:187: undefined reference to `SASR'
+./src/decode.o: In function `Postprocessing':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/decode.c:29: undefined reference to `SASR'
+./src/long_term.o: In function `Calculation_of_the_LTP_parameters':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:113: undefined reference to `SASR'
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:178: undefined reference to `SASR'
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:197: undefined reference to `SASR'
+./src/long_term.o:C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:198: more undefined references to `SASR' follow
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:22:28 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/add.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/add.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/add.d" -MT"src/add.o" -o "src/add.o" "../src/add.c"
+'Finished building: ../src/add.c'
+' '
+'Building file: ../src/code.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/code.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/code.d" -MT"src/code.o" -o "src/code.o" "../src/code.c"
+In file included from ../src/code.c:9:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/code.c: In function 'Gsm_Coder':
+../src/code.c:97:8: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  (void)memcpy( (char *)S->dp0, (char *)(S->dp0 + 160),
+        ^~~~~~
+../src/code.c:97:8: warning: incompatible implicit declaration of built-in function 'memcpy'
+../src/code.c:97:8: note: include '<string.h>' or provide a declaration of 'memcpy'
+'Finished building: ../src/code.c'
+' '
+'Building file: ../src/debug.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/debug.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/debug.d" -MT"src/debug.o" -o "src/debug.o" "../src/debug.c"
+../src/debug.c: In function 'gsm_debug_longwords':
+../src/debug.c:52:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'longword {aka long int}' [-Wformat=]
+   fprintf(stderr, "%d ", ptr[ from ] );
+                     ^
+../src/debug.c: In function 'gsm_debug_longword':
+../src/debug.c:66:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value );
+                        ^
+../src/debug.c: In function 'gsm_debug_word':
+../src/debug.c:73:24: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+  fprintf(stderr, "%s: %d\n", name, (long)value);
+                        ^
+'Finished building: ../src/debug.c'
+' '
+'Building file: ../src/decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/decode.d" -MT"src/decode.o" -o "src/decode.o" "../src/decode.c"
+'Finished building: ../src/decode.c'
+' '
+'Building file: ../src/gsm_create.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_create.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_create.d" -MT"src/gsm_create.o" -o "src/gsm_create.o" "../src/gsm_create.c"
+In file included from ../src/gsm_create.c:9:0:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/gsm_create.c:7:13: warning: 'ident' defined but not used [-Wunused-variable]
+ static char ident[] = "$Header: /home/mguthaus/.cvsroot/mibench/telecomm/gsm/src/gsm_create.c,v 1.1.1.1 2000/11/06 19:54:25 mguthaus Exp $";
+             ^~~~~
+'Finished building: ../src/gsm_create.c'
+' '
+'Building file: ../src/gsm_decode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_decode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_decode.d" -MT"src/gsm_decode.o" -o "src/gsm_decode.o" "../src/gsm_decode.c"
+'Finished building: ../src/gsm_decode.c'
+' '
+'Building file: ../src/gsm_encode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_encode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_encode.d" -MT"src/gsm_encode.o" -o "src/gsm_encode.o" "../src/gsm_encode.c"
+'Finished building: ../src/gsm_encode.c'
+' '
+'Building file: ../src/gsm_explode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_explode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_explode.d" -MT"src/gsm_explode.o" -o "src/gsm_explode.o" "../src/gsm_explode.c"
+'Finished building: ../src/gsm_explode.c'
+' '
+'Building file: ../src/gsm_implode.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_implode.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_implode.d" -MT"src/gsm_implode.o" -o "src/gsm_implode.o" "../src/gsm_implode.c"
+'Finished building: ../src/gsm_implode.c'
+' '
+'Building file: ../src/gsm_option.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_option.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_option.d" -MT"src/gsm_option.o" -o "src/gsm_option.o" "../src/gsm_option.c"
+'Finished building: ../src/gsm_option.c'
+' '
+'Building file: ../src/gsm_print.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gsm_print.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gsm_print.d" -MT"src/gsm_print.o" -o "src/gsm_print.o" "../src/gsm_print.c"
+'Finished building: ../src/gsm_print.c'
+' '
+'Building file: ../src/long_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/long_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/long_term.d" -MT"src/long_term.o" -o "src/long_term.o" "../src/long_term.c"
+'Finished building: ../src/long_term.c'
+' '
+'Building file: ../src/lpc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lpc.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lpc.d" -MT"src/lpc.o" -o "src/lpc.o" "../src/lpc.c"
+'Finished building: ../src/lpc.c'
+' '
+'Building file: ../src/preprocess.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/preprocess.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/preprocess.d" -MT"src/preprocess.o" -o "src/preprocess.o" "../src/preprocess.c"
+'Finished building: ../src/preprocess.c'
+' '
+'Building file: ../src/rpe.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpe.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/rpe.d" -MT"src/rpe.o" -o "src/rpe.o" "../src/rpe.c"
+'Finished building: ../src/rpe.c'
+' '
+'Building file: ../src/short_term.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/short_term.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/short_term.d" -MT"src/short_term.o" -o "src/short_term.o" "../src/short_term.c"
+'Finished building: ../src/short_term.c'
+' '
+'Building file: ../src/table.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/table.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/table.d" -MT"src/table.o" -o "src/table.o" "../src/table.c"
+'Finished building: ../src/table.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:23:28 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/add.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/add.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/add.d" -MT"src/add.o" -o "src/add.o" "../src/add.c"
+'Finished building: ../src/add.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:30:45 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'length_okay':
+../src/toast.c:159:5: error: 'NAME_MAX' undeclared (first use in this function)
+  if(NAME_MAX) {
+     ^~~~~~~~
+../src/toast.c:159:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/toast.c:163:23: error: 'USE_PATHCONF' undeclared (first use in this function)
+   if (_PC_NAME_MAX && USE_PATHCONF) {
+                       ^~~~~~~~~~~~
+../src/toast.c:170:11: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+       tmp = s;
+           ^
+../src/toast.c: In function 'normalname':
+../src/toast.c:300:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:412:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:442:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:642:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+make: *** [src/toast.o] Error 1
+20:32:02 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'length_okay':
+../src/toast.c:165:11: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+       tmp = s;
+           ^
+../src/toast.c: In function 'normalname':
+../src/toast.c:293:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:405:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:435:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:635:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `length_okay':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:170: undefined reference to `pathconf'
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:343: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:361: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:405: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:32:28 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'length_okay':
+../src/toast.c:165:11: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+       tmp = s;
+           ^
+../src/toast.c: In function 'normalname':
+../src/toast.c:292:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:404:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:434:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:634:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `length_okay':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:170: undefined reference to `pathconf'
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:360: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:404: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:33:49 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:34:18 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_mode':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:40:52 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_mode':
+../src/toast.c:338:13: error: invalid storage class for function 'update_own'
+ static void update_own P0()
+             ^~~~~~~~~~
+../src/toast.c:348:13: error: invalid storage class for function 'update_times'
+ static void update_times P0()
+             ^~~~~~~~~~~~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'update_mode':
+../src/toast.c:395:12: error: invalid storage class for function 'okay_as_input'
+ static int okay_as_input P3((name,f,st), char* name, FILE* f, struct stat * st)
+            ^~~~~~~~~~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'update_mode':
+../src/toast.c:423:13: error: invalid storage class for function 'prepare_io'
+ static void prepare_io P1(( desc), struct fmtdesc * desc)
+             ^~~~~~~~~~
+../src/toast.c:432:25: error: invalid storage class for function 'grok_format'
+ static struct fmtdesc * grok_format P1((name), char * name)
+                         ^~~~~~~~~~~
+../src/toast.c:454:12: error: invalid storage class for function 'open_input'
+ static int open_input P2((name, st), char * name, struct stat * st)
+            ^~~~~~~~~~
+../src/toast.c:487:12: error: invalid storage class for function 'open_output'
+ static int open_output P1((name), char *name)
+            ^~~~~~~~~~~
+../src/toast.c:519:12: error: invalid storage class for function 'process_encode'
+ static int process_encode P0()
+            ^~~~~~~~~~~~~~
+../src/toast.c:558:12: error: invalid storage class for function 'process_decode'
+ static int process_decode P0()
+            ^~~~~~~~~~~~~~
+../src/toast.c:614:12: error: invalid storage class for function 'process'
+ static int process P1((name), char * name)
+            ^~~~~~~
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+../src/toast.c: In function 'update_mode':
+../src/toast.c:700:13: error: invalid storage class for function 'version'
+ static void version P0()
+             ^~~~~~~
+../src/toast.c:707:13: error: invalid storage class for function 'help'
+ static void help P0()
+             ^~~~
+../src/toast.c:731:13: error: invalid storage class for function 'set_format'
+ static void set_format P1((f), struct fmtdesc * f)
+             ^~~~~~~~~~
+../src/toast.c:743:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main P2((ac, av), int ac, char **av)
+     ^~~~
+../src/toast.c:791:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../src/toast.c:743:5: warning: 'main' defined but not used [-Wunused-function]
+ int main P2((ac, av), int ac, char **av)
+     ^~~~
+make: *** [src/toast.o] Error 1
+20:41:14 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_own':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:41:30 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'update_times':
+../src/toast.c:386:10: warning: implicit declaration of function 'utime' [-Wimplicit-function-declaration]
+   (void) utime(outname, ut);
+          ^~~~~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/toast.o: In function `update_times':
+C:\Users\Henri\Downloads\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+20:41:54 **** Auto Build of configuration Debug for project hello_word ****
+make all 
+'Building file: ../src/toast.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/toast.o" -I../../hello_word_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/toast.d" -MT"src/toast.o" -o "src/toast.o" "../src/toast.c"
+In file included from ../src/toast.h:12:0,
+                 from ../src/toast.c:9:
+../src/config.h:12:28: warning: "/*" within comment [-Wcomment]
+ /*efine SIGHANDLER_T int   /* signal handlers are void */
+                             
+../src/config.h:13:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_SYSV_SIGNAL 1  /* sigs not blocked/reset? */
+                             
+../src/config.h:16:25: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_LIMITS_H 1  /* /usr/include/limits.h */
+                          
+../src/config.h:18:27: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_ERRNO_DECL 1  /* errno.h declares errno */
+                            
+../src/config.h:25:26: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_STRINGS_H 1  /* /usr/include/strings.h  */
+                           
+../src/config.h:29:23: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMES 1  /* use utimes() syscall instead */
+                        
+../src/config.h:31:24: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMBUF 1  /* struct utimbuf  */
+                         
+../src/config.h:32:28: warning: "/*" within comment [-Wcomment]
+ /*efine HAS_UTIMEUSEC   1  /* microseconds in utimbuf? */
+                             
+../src/toast.c: In function 'normalname':
+../src/toast.c:274:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if (s = suffix(p, cut)) strcpy(s, want);
+  ^~
+../src/toast.c: In function 'okay_as_input':
+../src/toast.c:416:26: warning: format '%s' expects argument of type 'char *', but argument 5 has type 'int' [-Wformat=]
+         "%s: \"%s\" has %s other link%s -- unchanged.\n",
+                          ^
+../src/toast.c: In function 'process':
+../src/toast.c:616:6: warning: unused variable 'step' [-Wunused-variable]
+  int step = 0;
+      ^~~~
+'Finished building: ../src/toast.c'
+' '
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_word.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_word.elf  |tee "hello_word.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 176876	  15200	   3428	 195504	  2fbb0	hello_word.elf
+'Finished building: hello_word.elf.size'
+' '
+20:42:57 **** Incremental Build of configuration Debug for project hello_word ****
+make all 
+make: Nothing to be done for `all'.
+20:47:07 **** Incremental Build of configuration Debug for project hello_word ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,25 @@
+20:00:43 **** Incremental Build of configuration Debug for project hello_word ****
+make all 
+'Building target: hello_word.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_word_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_word.elf"  ./src/add.o ./src/code.o ./src/debug.o ./src/decode.o ./src/gsm_create.o ./src/gsm_decode.o ./src/gsm_destroy.o ./src/gsm_encode.o ./src/gsm_explode.o ./src/gsm_implode.o ./src/gsm_option.o ./src/gsm_print.o ./src/helloworld.o ./src/long_term.o ./src/lpc.o ./src/platform.o ./src/preprocess.o ./src/rpe.o ./src/short_term.o ./src/table.o ./src/toast.o ./src/toast_alaw.o ./src/toast_audio.o ./src/toast_lin.o ./src/toast_ulaw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/add.o: In function `gsm_mult':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/add.c:181: undefined reference to `SASR'
+./src/decode.o: In function `Postprocessing':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/decode.c:29: undefined reference to `SASR'
+./src/long_term.o: In function `Calculation_of_the_LTP_parameters':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:113: undefined reference to `SASR'
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:178: undefined reference to `SASR'
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:197: undefined reference to `SASR'
+./src/long_term.o:C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/long_term.c:198: more undefined references to `SASR' follow
+./src/toast.o: In function `update_mode':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:324: undefined reference to `fchmod'
+./src/toast.o: In function `update_own':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:342: undefined reference to `fchown'
+./src/toast.o: In function `update_times':
+C:\Users\iShift\Documents\VivadoProjects\hello_word\hello_word.sdk\hello_word\Debug/../src/toast.c:386: undefined reference to `utime'
+collect2.exe: error: ld returned 1 exit status
+make: *** [hello_word.elf] Error 1
+
+20:00:44 Build Finished (took 1s.181ms)
+
